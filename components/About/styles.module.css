@@ -1,0 +1,132 @@
+.about {
+  width: 100%;
+  min-height: fit-content; /* يخلي الطول على قد المحتوى */
+  box-sizing: border-box;
+  padding: 60px 25px;
+  color: white;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title p:first-child {
+  color: var(--second-color);
+  border-radius: 28px;
+  border: 1px solid var(--second-color);
+  padding: 7px 14px;
+  font-size: 20px;
+}
+
+.title h2 {
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+.title p:last-child {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* نزود مسافة بين النص والصورة */
+  flex-wrap: wrap; /* يمنع اللزق */
+}
+
+.textContainer {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textContainer h2 {
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.textContainer p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.imageContainer {
+  position: relative;
+  width: 650px;
+  height: 350px;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .about {
+    padding: 50px 20px;
+  }
+
+  .title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+  }
+
+  .textContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .textContainer h2 {
+    font-size: 28px;
+  }
+
+  .imageContainer {
+    width: 600px;
+    max-width: 500px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .title h2 {
+    font-size: 26px;
+  }
+
+  .textContainer h2 {
+    font-size: 22px;
+  }
+
+  .title p:first-child {
+    font-size: 15px;
+  }
+
+  .title p:last-child,
+  .textContainer p {
+    font-size: 15px;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 250px;
+  }
+
+}

@@ -1,0 +1,49 @@
+{
+  "homeLink": "Home",  
+  "aboutLink": "About us",  
+  "servicesLink": "Our Services",  
+  "contactLink": "Contact us",  
+
+  "heroH1": "We can deliver your",
+  "span1": "shipment",
+  "part1": "Easily,",
+  "heroH2": "quickly and",
+  "span2": "safely",
+  "heroH3": "Wherever you",
+  "span3": "are",
+  "heroBtn": "Learn more",
+
+  "aboutTitle": "About us",
+  "aboutTitleH2": "Why choose us",
+  "aboutTitleP": "Because Barq will make it easier for you to send your package with the features we offer",
+  "aboutTextH2": "We deliver more than shipments — we deliver peace of mind and reliability",
+  "aboutTextP": "Our team ensures every package reaches its destination safely and on time. With advanced tracking and dedicated support, we make shipping simple and worry-free for you.",
+
+  "servicesIntro": "Our Services",
+  "servicesHeadline": "Fast & Reliable",
+  "servicesDesc": "We provide comprehensive shipping solutions with speed, security, and full support for all your logistics needs.",
+  "servicesCard1H3": "Customer Service",
+  "servicesCard1p": "We have a specialized customer service team to solve all our customers' problems and follow up with our customers moment by moment in managing their shipments.",
+  "servicesCard2H3": "Track accounts",
+  "servicesCard2p": "Through your account on the company’s program, you will be able to track your shipments and see and know where each shipment you have with us",
+  "servicesCard3H3": "Collection",
+  "servicesCard3p": "With our collection service, you can easily receive your collections daily, and we also offer you the possibility of obtaining an advance of up to 15%.",
+
+  "contactTitle": "Contact us",
+  "contactSubtitle": "Let's start working together",
+  "contactDesc": "Get in touch to start shipping your goods",
+  "address": "Ezbet Alaa El-Din - Khusus - Qalyubia",
+  "phone1": "+20 105 582 8222",
+  "phone2": "+20 122 223 3666",
+  "phone3": "+20 112 678 4187",
+  "phone4": "+20 109 528 9495",
+
+  "footerTitleP1":"With",
+  "footerTitleP2":"BARQ,",
+  "footerTitleP3":"the fastest shipment in Egypt from Cairo and Giza to Alexandria, Lower Egypt, Hurghada and Upper Egypt",
+  "footerLinkTitle":"Fast Links",
+  "copyRight":"Licensed copy of BARQ Company. All rights reserved.",
+  "companyName":"Designed By:",
+
+  "changeLang": "العربية"
+}

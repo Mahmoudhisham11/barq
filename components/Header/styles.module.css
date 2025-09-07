@@ -1,0 +1,130 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: .3s;
+}
+
+.imageContainer {
+    position: relative;
+    width: 120px; 
+    height: 80px; 
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imageContainer img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.linksContainer {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex: 1;
+}
+
+.headerLink {
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--second-color);
+    padding: 8px 0;
+    transition: color 0.3s;
+}
+
+.headerLink::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--second-color);
+    transition: width 0.3s;
+}
+
+.headerLink:hover::after {
+    width: 100%;
+}
+.langBtnContainer {
+    padding: 35px;
+}
+.langBtn {
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+.moblieHeader {
+    display: none;
+}
+
+@media(max-width: 767px) {
+    .header {
+        display: none;
+    }
+    .moblieHeader {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        min-height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--background-color);
+        padding-bottom: 10px;
+        z-index: 1000;
+    }
+    .mobileImage {
+        position: relative;
+        width: 80px;
+        height: 100px;
+    }
+    .head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerBtn {
+        padding: 22px;
+    }
+    .headerBtn button {
+        color: var(--second-color);
+        border: none;
+        font-size: 22px;
+        border-radius: 8px;
+        background-color: transparent;
+    }
+    .body {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 22px;
+    }
+    .moblieLinks {
+        color: var(--second-color);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .moblieLangContainer {
+        width: 100%;
+    }
+}
