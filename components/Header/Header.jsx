@@ -12,7 +12,6 @@ import uk from "../../public/images/uk.png"
 export default function Header() {
 
   const menuRef = useRef(null)
-  const linksRef = useRef([])
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
