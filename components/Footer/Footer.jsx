@@ -17,6 +17,7 @@ export default function Footer({ t }) {
             <p>01055828222</p>
             <p>01222233666</p>
             <p>01126784187</p>
+            <p>01095289495</p>
           </div>
           <div className={styles.linkContainer}>
             <p>روابط سريعة</p>

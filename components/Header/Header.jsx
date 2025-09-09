@@ -7,6 +7,7 @@ import styles from "./styles.module.css"
 import Image from "next/image"
 import logo from "../../public/images/logo.png"
 import Link from "next/link"
+import uk from "../../public/images/uk.png"
 
 export default function Header() {
   const router = useRouter()
@@ -14,6 +15,14 @@ export default function Header() {
   const linksRef = useRef([])
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+
+  // روابط الهيدر
+  const links = [
+    { id: "home", label: "الصفحة الرئيسية" },
+    { id: "about", label: "من نحن" },
+    { id: "services", label: "خدماتنا" },
+    { id: "contact", label: "تواصل معنا" },
+  ]
 
   // انيميشن فتح/قفل المينيو
   useEffect(() => {
@@ -43,12 +52,16 @@ export default function Header() {
           <Image src={logo} fill style={{ objectFit: "cover" }} alt="logo" />
         </div>
         <div className={styles.linksContainer}>
-          <Link href={"#home"} className={styles.headerLink}>الصفحة الرئيسية</Link>
-          <Link href={"#about"} className={styles.headerLink}>من نحن</Link>
-          <Link href={"#services"} className={styles.headerLink}>خدماتنا</Link>
-          <Link href={"#contact"} className={styles.headerLink}>تواصل معنا</Link>
+          {links.map((link) => (
+            <Link key={link.id} href={`#${link.id}`} className={styles.headerLink}>
+              {link.label}
+            </Link>
+          ))}
         </div>
         <div className={styles.langBtnContainer}>
+          <button className={styles.langBtn} onClick={() => router.push("https://barq-en-shipping.netlify.app/")}>
+            <Image src={uk} alt="uk" fill style={{objectFit: "cover"}}/>
+          </button>
         </div>
       </div>
 
@@ -69,18 +82,21 @@ export default function Header() {
           ref={menuRef}
           style={{ height: 0, overflow: "hidden" }}
         >
-          {["الصفحة الرئيسية", "من نحن", "خدماتنا", "تواصل معنا"].map((link, i) => (
+          {links.map((link, i) => (
             <Link
-              key={link}
-              href={`#${link}`}
+              key={link.id}
+              href={`#${link.id}`}
               className={styles.moblieLinks}
               ref={(el) => (linksRef.current[i] = el)}
               onClick={() => setIsOpen(false)}
             >
-              {link}
+              {link.label}
             </Link>
           ))}
           <div className={styles.moblieLangContainer}>
+            <button className={styles.langBtn} onClick={() => router.push("https://barq-en-shipping.netlify.app/")}>
+              <Image src={uk} alt="uk" fill style={{objectFit: "cover"}}/>
+            </button>
           </div>
         </div>
       </div>

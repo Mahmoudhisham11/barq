@@ -29,6 +29,10 @@ export default function Contact({ t }) {
             <span><IoCall /></span>
             <span>01126784187</span>
           </strong>
+          <strong>
+            <span><IoCall /></span>
+            <span>01095289495</span>
+          </strong>
         </div>
         <div className={styles.leftSide}>
           <iframe
