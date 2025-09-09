@@ -66,16 +66,16 @@ export default function Header() {
             </button>
           </div>
         </div>
-          <Link href={"#home"} className={styles.moblieLinks}>الصفحة الرئيسية</Link>
-          <Link href={"#about"} className={styles.moblieLinks}>من نحن</Link>
-          <Link href={"#services"} className={styles.moblieLinks}>خدماتنا</Link>
-          <Link href={"#contact"} className={styles.moblieLinks}>تواصل معنا</Link>
+
         <div
           className={styles.body}
           ref={menuRef}
           style={{ height: 0, overflow: "hidden" }}
         >
-
+          <Link href={"#home"} className={styles.moblieLinks}>الصفحة الرئيسية</Link>
+          <Link href={"#about"} className={styles.moblieLinks}>من نحن</Link>
+          <Link href={"#services"} className={styles.moblieLinks}>خدماتنا</Link>
+          <Link href={"#contact"} className={styles.moblieLinks}>تواصل معنا</Link>
         </div>
       </div>
     </header>
