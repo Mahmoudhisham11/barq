@@ -66,23 +66,16 @@ export default function Header() {
             </button>
           </div>
         </div>
-
+          <Link href={"#home"} className={styles.moblieLinks}>الصفحة الرئيسية</Link>
+          <Link href={"#about"} className={styles.moblieLinks}>من نحن</Link>
+          <Link href={"#services"} className={styles.moblieLinks}>خدماتنا</Link>
+          <Link href={"#contact"} className={styles.moblieLinks}>تواصل معنا</Link>
         <div
           className={styles.body}
           ref={menuRef}
           style={{ height: 0, overflow: "hidden" }}
         >
-          {["الصفحة الرئيسية", "من نحن", "خدماتنا", "تواصل معنا"].map((link, i) => (
-            <Link
-              key={link}
-              href={`#${link}`}
-              className={styles.moblieLinks}
-              ref={(el) => (linksRef.current[i] = el)}
-              onClick={() => setIsOpen(false)}
-            >
-              {link}
-            </Link>
-          ))}
+
         </div>
       </div>
     </header>
